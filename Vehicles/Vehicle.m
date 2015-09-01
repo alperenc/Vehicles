@@ -10,19 +10,19 @@
 
 @implementation Vehicle
 
-- (NSString *)goForward {
+-(NSString *)goForward {
     return nil;
 }
 
-- (NSString *)goBackward {
+-(NSString *)goBackward {
     return nil;
 }
 
-- (NSString *)stopMoving {
+-(NSString *)stopMoving {
     return nil;
 }
 
-- (NSString *)turn:(NSInteger)degrees {
+-(NSString *)turn:(NSInteger)degrees {
     
     // Since there are only 360 degrees in a circle, calculate what a single turn would be
     NSInteger degreesInACircle = 360;
@@ -35,11 +35,11 @@
     return [NSString stringWithFormat:@"Turn %ld degrees.", (long)degrees];
 }
 
-- (NSString *)changeGears:(NSString *)newGearName {
+-(NSString *)changeGears:(NSString *)newGearName {
     return [NSString stringWithFormat:@"Put %@ into %@ gear.", self.modelName, newGearName];
 }
 
-- (NSString *)makeNoise {
+-(NSString *)makeNoise {
     return nil;
 }
 
